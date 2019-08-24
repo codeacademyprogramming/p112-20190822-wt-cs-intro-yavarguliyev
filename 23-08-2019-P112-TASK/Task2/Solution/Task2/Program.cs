@@ -32,6 +32,7 @@ namespace Task2
             {
                 case 1:
                     account.ScreenTheBalance();
+                    Console.WriteLine();
                     break;
                 case 2:
                     Console.WriteLine("Enter Amount to Pay: ");
@@ -43,6 +44,7 @@ namespace Task2
                     Console.Write("Enter Amount to Withdraw: ");
                     amount = double.Parse(Console.ReadLine());
                     account.Withdraw(amount);
+                    person.Displays();
                     Console.WriteLine("Account Balance: {0}", account.ShowTheBalance());
                     break;
                 case 4:
@@ -65,6 +67,7 @@ namespace Task2
                     Console.WriteLine("Balance after Withdrawal: {0}", account.ShowTheBalance());
                     account.Withdraw(0);
                     Console.ReadKey();
+                    person.Displays();
                     break;
 
                 case 0:
@@ -72,6 +75,7 @@ namespace Task2
                     break;
                 default:
                     Console.WriteLine("Invalid input");
+                    person.Displays();
                     break;
             } while (selection != 0)
 

@@ -24,9 +24,18 @@ namespace Task2
 
         public void Display()
         {
-            Console.WriteLine("Enter First Name: {0}", firstName);
-            Console.WriteLine("Enter Last Name: {0}", lastName);
-            Console.WriteLine("Enter Identiy Card Serial Number: {0}", identityCardSerialNumber);
+            Console.Write("Change First Name: ");
+            firstName = Console.ReadLine();
+            Console.Write("Change Last Name: ");
+            lastName = Console.ReadLine();
+            Console.Write("Change Identiy Card Serial Number: ");
+            identityCardSerialNumber = Console.ReadLine();
+
+            Console.WriteLine("********************");
+
+            Console.WriteLine("First Name is changed: {0}", firstName);
+            Console.WriteLine("Last Name is changed: {0}", lastName);
+            Console.WriteLine("Identiy Card Serial Number is changed: {0}", identityCardSerialNumber);
         }
 
         public void Displays()
